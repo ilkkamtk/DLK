@@ -9,8 +9,8 @@
 
 
 ## Tehtävät
-### Asenna WordPress omalle koneellesi tai Metropolian palvelimelle
-### Lisää sisältöä sivustoosi
+### 1. Asenna WordPress omalle koneellesi tai Metropolian palvelimelle
+### 2. Lisää sisältöä sivustoosi
 * Katso video 'Sisällön lisääminen'. Sen ohjeiden avulla tee seuraavat asiat:
 
 1. Lisää sivustoosi 3 sivua:
@@ -29,3 +29,7 @@
     * Tee mahdollisimman monta artikkelia ja jaa ne em. alakategorioihin
     * Tee yhteen alakategoriaan, esim autot, vähintään 6 artikkelia
     * Lisää artikkeleiden sisällöksi Lorem Ipsumia sekä lisää tekstin eteen kuva, lisää artikkelikuva sekä ote.
+    
+### 3. Asenna lisäosia
+1. WP REST API
+2. 
