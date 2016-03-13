@@ -30,6 +30,6 @@
     * Tee yhteen alakategoriaan, esim autot, vähintään 6 artikkelia
     * Lisää artikkeleiden sisällöksi Lorem Ipsumia sekä lisää tekstin eteen kuva, lisää artikkelikuva sekä ote.
     
-### 3. Asenna lisäosia
-1. WP REST API
-2. 
+### 3. Asenna seuraavat lisäosat ja tutustu niiden toimintaan
+1. WP REST API, Tekijä WP REST API Team
+2. WP CSV Exporter, Tekijä Nakashima Masahiro
