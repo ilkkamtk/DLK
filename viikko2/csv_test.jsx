@@ -1,6 +1,11 @@
 //@include ../bin/porky.jsx;
 
-var doc = app.activeDocument; 
+var doc = app.activeDocument;
+
+// tiedoston valinta (Dialog)
+// var myFolder=Folder("~/"); 
+// var myMask="*.csv";
+// var myFile = TODO;
 
 // read an existing text file from a specific folder
 var myCSVFileContent = readFile('polku_csv_tiedostoon');
@@ -20,12 +25,12 @@ if(myCSVFileContent){
     alert(imageSrc);
     
     // isokokoinen kuva on ilman osoitteesta löytyvää -400x300 tekstiä
-    var origImageSrc = imageSrc.replace (/-[0-9]+x[0-9]+/, '');
+    var origImageSrc = imageSrc.replace (/TODO/, '');
     origImageSrc = origImageSrc.replace (/"/, '');
     origImageSrc = origImageSrc.replace (/"/, '');
     alert(origImageSrc);
     
-    // tallennetaan kuva haluttuun kansioon
+    // tallennetaan kuva haluttuun kansioon (porky)
     var f = httpGetBinaryFile(origImageSrc, 80, 'polku_kansioon');
     
 }else{
