@@ -18,7 +18,7 @@ if(myCSVFileContent){
     alert(title);
     
     // haetaan HTML:n joukosta kuvalinkki
-    var kuvaPatt = new RegExp ('src\s*=\s*(.+?) ');
+    var kuvaPatt = new RegExp ('src\s*=\s*"(.+?)"');
     var imageSrc = kuvaPatt.exec(post)[1];
     alert(imageSrc);
     
