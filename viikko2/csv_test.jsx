@@ -3,8 +3,6 @@
 var doc = app.activeDocument;
 
 // tiedoston valinta (Dialog)
-// var myFolder=Folder("~/"); 
-// var myMask="*.csv";
 // var myFile = TODO;
 
 // read an existing text file from a specific folder
@@ -26,8 +24,7 @@ if(myCSVFileContent){
     
     // isokokoinen kuva on ilman osoitteesta löytyvää -400x300 tekstiä
     var origImageSrc = imageSrc.replace (/TODO/, '');
-    origImageSrc = origImageSrc.replace (/"/, '');
-    origImageSrc = origImageSrc.replace (/"/, '');
+    // TODO: poista origImageSrc:stä myös lainausmerkit
     alert(origImageSrc);
     
     // tallennetaan kuva haluttuun kansioon (porky)
