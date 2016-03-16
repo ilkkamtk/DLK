@@ -33,3 +33,7 @@
 ### 3. Asenna seuraavat lisäosat ja tutustu niiden toimintaan
 1. WP REST API (Version 2), Tekijä WP REST API Team
 2. WP CSV Exporter, Tekijä Nakashima Masahiro
+
+### Linkkejä
+* [WordPress Rest API dokumentaatio](http://v2.wp-api.org/reference/)
+* [jsonlint](http://jsonlint.com/)
