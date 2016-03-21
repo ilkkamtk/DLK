@@ -4,6 +4,8 @@
 1. Käytä WordPressin pluginia CSV-tiedoston luomisessa ja tee InDesignissa dokumentti, jossa on jokainen artikkeli kuvineen WordPress -sivustoltasi
 2. Luo CSV tiedosto phpmyadminissä suoraan tietokannasta  ja tee InDesignissa dokumentti, jossa on jokainen artikkeli kuvineen WordPress -sivustoltasi
 
+[Esimerkki template InDesigniin]{https://github.com/ilkkamtk/DLK/blob/master/viikko2/malli.indt}
+
 ### Tehtävä 2. Asenna seuraavass vaiheessa tarvittavat työkalut ja kirjastot
 1. Jos teet harjoitusta omalla tietokoneella, asenna [node.js](https://nodejs.org/). Valitse Stable versio. Koulun koneilla se on jo valmiina.
 2. Jos teet harjoitusta omalla tietokoneella, asenna git-työkalut Koulun koneilla ne ovat jo valmiina.
@@ -25,6 +27,8 @@
 2. Haetaan data WordPressin Rest API pluginin avulla (tarkennetaan myöh...)
 
 ### Apuja
+* https://www.linux.fi/wiki/Säännöllinen_lauseke
+* https://gist.github.com/ccstone/5385334
 * http://www.adobe.com/devnet/indesign/documentation.html
 * https://forums.adobe.com/thread/708488?tstart=0
 * https://forums.adobe.com/thread/899665?tstart=0
