@@ -3,6 +3,12 @@
 ### Tehtävä 1. Tuo CSV dataa WordPressistä
 1. Käytä WordPressin pluginia CSV-tiedoston luomisessa ja tee InDesignissa dokumentti, jossa on jokainen artikkeli kuvineen WordPress -sivustoltasi
 2. Luo CSV tiedosto phpmyadminissä suoraan tietokannasta  ja tee InDesignissa dokumentti, jossa on jokainen artikkeli kuvineen WordPress -sivustoltasi
+   * ''' SELECT p2.post_title, p2.post_content, p1.guid as '@Photos'
+FROM harkka_posts p1, harkka_posts p2
+WHERE p1.post_parent = p2.ID
+AND p1.post_mime_type LIKE 'image%'
+AND p2.post_type = 'post'
+AND p2.post_status = 'publish'
 
 [Esimerkkitemplate InDesigniin](https://github.com/ilkkamtk/DLK/blob/master/viikko2/malli.indt) (klikkaa 'View raw' ladataksesi)
 
