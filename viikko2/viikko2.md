@@ -5,7 +5,7 @@
 2. Luo CSV tiedosto phpmyadminissä suoraan tietokannasta  ja tee InDesignissa dokumentti, jossa on jokainen artikkeli kuvineen WordPress -sivustoltasi
 ```
 SELECT p2.post_title, p2.post_content, p1.guid as '@Photos'
-FROM harkka_posts p1, harkka_posts p2
+FROM etuliite_posts p1, etuliite_posts p2
 WHERE p1.post_parent = p2.ID
 AND p1.post_mime_type LIKE 'image%'
 AND p2.post_type = 'post'
