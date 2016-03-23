@@ -41,3 +41,4 @@ AND p2.post_status = 'publish'
 * https://forums.adobe.com/thread/899665?tstart=0
 * http://indesignsecrets.com/topic/script-to-duplicate-pagespread-after-current
 * http://indesignsecrets.com/javascript-for-the-absolute-beginner.php
+* http://www.indiscripts.com/post/2009/12/swapping-and-reordering-pages
