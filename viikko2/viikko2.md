@@ -30,7 +30,7 @@ AND p2.post_status = 'publish'
     * Kokeile eri porkyn esimerkkejä, kuten 'src/examples/test-file-csv-to-array-to-table.jsx' sekä 'src/examples/test-remote-json-data-access.jsx' 
 
 ### Tehtävä 3. Tuo dataa WordPressistä ExtendScriptin avulla
-1. Haetaan data CSV tiedostosta (tarkennetaan myöh...)
+1. Haetaan data CSV tiedostosta. [Aloitustiedosto](https://github.com/ilkkamtk/DLK/blob/master/viikko2/csv_test.jsx)
 2. Haetaan data WordPressin Rest API pluginin avulla (tarkennetaan myöh...)
 
 ### Apuja
