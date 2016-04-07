@@ -37,7 +37,7 @@ pages[0].remove();
 
 function addText(post, title, tempPage) {
     post = post.replace(/<a.*\/a>/, '');
-
+    
     // valitse kentät
     var otsikkoKentta = tempPage.textFrames.itemByName("otsikko");
     var tekstiKentta = tempPage.textFrames.itemByName("teksti");
@@ -47,11 +47,11 @@ function addText(post, title, tempPage) {
 
     // porkyllä saadaan html tägit tyyleiksi
     tekstiKentta = placeHTML(tekstiKentta, post, "strong, em", "p, h1, div");
-
+    tekstiKentta.contents = erikoismerkitPois(tekstiKentta.contents);
 }
 
 function addImage(kuvanID, tempPage) {
-    settings.dataSource.name = "http://users.metropolia.fi/~ilkkamtk/wp_harjoitus/wp-json/wp/v2/media/"+kuvanID;
+    settings.dataSource.name = "http://users.metropolia.fi/~TUNNUS/WP-KANSIO/wp-json/wp/v2/media/"+kuvanID;
     var vastaus2 = JSON.parse(connectToDataSource(""));
     var osoite = vastaus2.guid.rendered 
     var kuvaKentta = tempPage.rectangles.itemByName("kuva");
@@ -60,4 +60,15 @@ function addImage(kuvanID, tempPage) {
     kuvaKentta.place(kuva, false);
     kuvaKentta.images[0].fit(FitOptions.FILL_PROPORTIONALLY);
     kuvaKentta.images[0].fit(FitOptions.centerContent);
+}
+
+function erikoismerkitPois(teksti) {
+     var map = {"gt":">" /* , … */};
+    return teksti.replace(/&(#(?:x[0-9a-f]+|\d+)|[a-z]+);?/gi, function($0, $1) {
+        if ($1[0] === "#") {
+            return String.fromCharCode($1[1].toLowerCase() === "x" ? parseInt($1.substr(2), 16)  : parseInt($1.substr(1), 10));
+        } else {
+            return map.hasOwnProperty($1) ? map[$1] : $0;
+        }
+    });
 }
