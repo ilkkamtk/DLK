@@ -8,5 +8,6 @@
     * Tutustu porky/src/examples/test-remote-json-data-access.jsx -tiedostoon
     * Tulosta alert-komennon avulla Wordpressin artikkelien tekstisisältöä, otsikoita sekä artikkelien kuvien osotteita. Tätä varten vaihda em. esimerkkitiedostossa osoitteeksi http://users.metropolia.fi/~TUNNUS/WP_KANSIO/wp-json/wp/v2/posts
 3. Luo InDesignissa lehdykkä WordPressiin tallennetuista artikkeleista käyttäen WP-Rest API:a (kokeiltiin kohdassa 2). Aloita homma muokkaamall skriptiä, joka tehtiin CSV:tä varten. Vaihda datalähteeksi CSV:n sijasta 2. kohdan mallin mukaan JSON.
+    * [valmis esimerkki](https://github.com/ilkkamtk/DLK/blob/master/viikko4/json_valmis.jsx)
 
 [Rest API dokumentaatio](http://v2.wp-api.org/reference/posts/)
