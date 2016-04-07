@@ -8,7 +8,7 @@ settings.dataSource.name = "http://users.metropolia.fi/~TUNNUS/WP-KANSIO/wp-json
 
 var myArray = JSON.parse(connectToDataSource(""));
 
-for (var i = 1; i < myArray.length; i++) {
+for (var i = 0; i < myArray.length; i++) {
     // kopioidaan mallisivu
     var currentPage = app.layoutWindows[0].activePage;
     var tempPage = currentPage.duplicate(LocationOptions.AFTER, currentPage);
